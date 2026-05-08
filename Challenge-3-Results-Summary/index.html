@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      color: white;
+      font-family: 'Hanken Grotesk';
+
+
+    }
+
+    .card {
+
+      display: flex;
+      box-shadow: 0 10px 30px rgb(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+
+
+
+    }
+
+    .result {
+
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+      width: 40px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+
+    }
+
+    .circle {
+
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+      flex-direction: column;
+      font-size: 70px;
+      font-weight: bold;
+      background: linear-gradient(360deg, #2421ca00, #4e21ca);
+
+    }
+
+    .circle span {
+
+      font-size: 12px;
+      opacity: 0.7;
+
+    }
+
+    .summary {
+
+      color: black;
+      width: 500px;
+      padding: 40px;
+      flex: 1;
+
+    }
+
+    .item {
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* pushes score to right */
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+
+
+    }
+
+    .reaction {
+      background-color: hsl(0, 100%, 67%, 0.1);
+      color: hsl(0, 100%, 67%);
+
+    }
+
+    .memory {
+      background-color: hsl(39, 100%, 56%, 0.1);
+      color: hsl(39, 100%, 56%);
+    }
+
+    .verbal {
+      background-color: hsl(166, 100%, 37%, 0.1);
+      color: hsl(166, 100%, 37%);
+    }
+
+    .visual {
+      background-color: hsl(234, 85%, 45%, 0.1);
+      color: hsl(234, 85%, 45%);
+    }
+
+
+
+    button {
+
+      background-color: hsl(224, 30%, 27%);
+      color: white;
+      border-radius: 20px;
+      padding: 10px 50px;
+      margin-top: 20px;
+      width: 100%;
+
+    }
+
+    img {
+
+      margin-right: 0;
+
+    }
+
+    .left {
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .score strong {
+
+      font-weight: bold;
+      color: black;
+    
+
+    }
+
+    .score {
+      color: rgba(0, 0, 0, 0.5);
+   
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="result">
+      <h3>Your Result</h3>
+      <div class="circle">76 <span>of 100</span></div>
+
+      <h2>Great</h2>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="summary">
+      <h3>Summary</h3>
+
+      <div class="item reaction">
+        <div class="left">
+          <img src="/Challenges/results-summary-component-main/assets/images/icon-reaction.svg">
+          Reaction
+        </div> <span class="score"><strong>80</strong> / 100</span>
+      </div>
+
+      <div class="item memory">
+        <div class="left">
+          <img src="/Challenges/results-summary-component-main/assets/images/icon-memory.svg">
+          Memory
+        </div>
+        <span class="score"><strong>92</strong> / 100</span>
+      </div>
+
+      <div class="item verbal">
+        <div class="left">
+          <img src="/Challenges/results-summary-component-main/assets/images/icon-verbal.svg">
+          Verbal
+        </div>
+        <span class="score"><strong>61</strong> / 100</span>
+      </div>
+
+      <div class="item visual">
+        <div class="left">
+          <img src="/Challenges/results-summary-component-main/assets/images/icon-visual.svg">
+          Visual
+        </div>
+        <span class="score"><strong>72</strong> / 100</span>
+      </div>
+
+      <button>Continue</button>
+    </div>
+
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+
+</html>
