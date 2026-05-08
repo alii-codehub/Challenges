@@ -1,0 +1,125 @@
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+
+
+}
+
+.container {
+
+    color: white;
+    border-radius: 12px;
+    /* controls the outer rounding */
+    overflow: hidden;
+
+}
+
+.card-wrapper {
+
+    display: flex;
+
+
+}
+
+h1 {
+
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Big Shoulders';
+    font-weight: 700;
+
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column; 
+    width: 250px;
+    padding: 50px 40px;
+
+
+
+}
+
+.card1 {
+
+    background-color: hsl(31, 77%, 52%);
+
+}
+
+.card2 {
+
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.card3 {
+
+    background-color: hsl(179, 100%, 13%);
+
+}
+
+.cars {
+
+    height: 40px;
+    width: 60px;
+    padding: 20px 0px;
+
+}
+
+.card button {
+
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    width: 60%;
+    font-family: 'Lexend Deca';
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-wrapper .card1 button {
+
+    color: hsl(31, 77%, 52%);
+
+}
+
+.card-wrapper .card2 button {
+
+    color: hsl(184, 100%, 22%);
+
+}
+
+.card-wrapper .card3 button {
+
+    color: hsl(179, 100%, 13%);
+
+}
+
+@media only screen and (max-width:768px) {
+
+    body {
+
+        
+    }
+
+    .card-wrapper{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card {
+
+        
+
+    }
+
+}
