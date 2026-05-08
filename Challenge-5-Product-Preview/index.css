@@ -1,0 +1,203 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+body p {
+
+    font-size: 14px;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    width: 630px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.left {
+
+    width: 50%;
+
+}
+
+img {
+
+    display: block;
+    height: 500px;
+
+
+
+}
+
+.right {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px 40px;
+
+
+
+}
+
+.right h1 {
+
+    font-family: 'Fraunces';
+    margin: 0;
+
+}
+
+.right h3,
+p,
+button {
+
+    font-family: 'Montserrat';
+    margin: 0;
+
+}
+
+.right h3 {
+
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 5px;
+
+}
+
+.right p {
+
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+
+}
+
+.right .price {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#big {
+
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: 'Fraunces';
+    font-weight: bold;
+
+}
+
+#underline {
+
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+
+}
+
+
+
+button img {
+
+    height: 20px;
+
+
+}
+
+button {
+
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
+
+button:hover {
+    background-color: #1b4133;
+}
+
+@media only screen and (max-width:375px) {
+
+    body {
+
+        padding: 400px 0;
+        height: 100vh;
+        
+
+    }
+
+    .container {
+
+        flex-direction: column;
+        width: 90%;
+        max-width: 340px;
+        
+
+    }
+
+    .left{
+
+        width: 100%;
+
+    }
+
+    .right {
+
+        padding: 20px 30px;
+        gap: 15px;
+        width: 100%;
+
+    }
+
+    .left img {
+
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+    }
+
+    .right h1 {
+
+        font-size: 25px;
+
+    }
+
+    .right h3 {
+
+        font-size: 10px;
+
+    }
+
+
+
+}
