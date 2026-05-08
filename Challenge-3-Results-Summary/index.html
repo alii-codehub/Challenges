@@ -25,6 +25,10 @@
       color: hsl(228, 45%, 44%);
     }
 
+    * {
+      box-sizing: border-box;
+    }
+
     body {
 
       display: flex;
@@ -44,6 +48,8 @@
       box-shadow: 0 10px 30px rgb(0, 0, 0, 0.1);
       border-radius: 10px;
       overflow: hidden;
+      max-width: 600px;
+      width: 100%;
 
 
 
@@ -52,10 +58,8 @@
     .result {
 
       background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-      flex: 1;
       text-align: center;
       padding: 40px;
-      width: 40px;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
 
@@ -85,12 +89,15 @@
 
     }
 
+    .result, .summary {
+      flex: 1;
+      width: 100%;
+    }
+
     .summary {
 
       color: black;
-      width: 500px;
       padding: 40px;
-      flex: 1;
 
     }
 
@@ -138,6 +145,7 @@
       padding: 10px 50px;
       margin-top: 20px;
       width: 100%;
+      display: block;
 
     }
 
@@ -167,6 +175,29 @@
       color: rgba(0, 0, 0, 0.5);
    
     }
+
+    @media only screen  and (max-width:768px) {
+      
+      body {
+        margin: 0;
+      }
+      
+      .card {
+        flex-direction: column;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      .summary, .result {
+  
+        width: 100%;
+      }
+
+      .result {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
     
   </style>
 </head>
@@ -187,14 +218,14 @@
 
       <div class="item reaction">
         <div class="left">
-          <img src="/Challenges/results-summary-component-main/assets/images/icon-reaction.svg">
+          <img src="/results-summary-component-main/assets/images/icon-reaction.svg" alt="">
           Reaction
         </div> <span class="score"><strong>80</strong> / 100</span>
       </div>
 
       <div class="item memory">
         <div class="left">
-          <img src="/Challenges/results-summary-component-main/assets/images/icon-memory.svg">
+          <img src="/results-summary-component-main/assets/images/icon-memory.svg">
           Memory
         </div>
         <span class="score"><strong>92</strong> / 100</span>
@@ -202,7 +233,7 @@
 
       <div class="item verbal">
         <div class="left">
-          <img src="/Challenges/results-summary-component-main/assets/images/icon-verbal.svg">
+          <img src="/results-summary-component-main/assets/images/icon-verbal.svg">
           Verbal
         </div>
         <span class="score"><strong>61</strong> / 100</span>
@@ -210,7 +241,7 @@
 
       <div class="item visual">
         <div class="left">
-          <img src="/Challenges/results-summary-component-main/assets/images/icon-visual.svg">
+          <img src="/results-summary-component-main/assets/images/icon-visual.svg">
           Visual
         </div>
         <span class="score"><strong>72</strong> / 100</span>
