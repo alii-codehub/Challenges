@@ -1,0 +1,167 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    /* overflow: hidden; */
+
+
+}
+
+.container {
+
+    background-color: white;
+    max-width: 400px;
+    border-radius: 1rem;
+    flex-direction: column;
+    display: flex;
+    
+
+}
+
+.img {
+
+    width: 100%;
+
+}
+
+.img img {
+
+    width: inherit;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+}
+
+.order  {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 30px 20px;
+
+}
+
+.order h1 {
+
+    font-weight: 900;
+
+}
+
+.order p {
+
+    text-align: center;
+    max-width: 300px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    line-height: 1.5rem;
+    
+
+}
+
+.annual {
+
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%,0.3);
+    border-radius: 1rem;
+    gap: 6rem;
+    padding: 15px;
+
+}
+
+.year h2 {
+
+    padding: 5px 0;
+    font-size: 0.9rem;
+    font-weight: 900;
+    
+
+}
+
+.year span {
+
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+
+}
+
+.annual a {
+
+    font-weight: bold;
+    font-size: 0.8rem;
+
+}
+
+.plan {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.7rem;
+}
+
+.button {
+
+    text-align: center;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: 'Red Hat Display';
+
+}
+
+.payment {
+
+    color: white;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    width: 88%;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    font-weight: 900;
+    
+    box-shadow: 0 1rem 1rem hsl(225, 100%, 94%);
+
+}
+
+
+.payment:hover {
+
+    opacity: .7;
+    cursor: pointer;
+
+}
+
+.cancel {
+
+    background-color: transparent;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+
+}
+
+.cancel:hover {
+
+    opacity: 0.7;
+    cursor: pointer;
+
+}
